@@ -1,0 +1,27 @@
+@use '../bses/variables' as v;
+@use '../bses/mixins' as m;
+
+.icono{
+    margin-top: 5rem;
+
+    .listado-icono{
+
+        @include m.tablet { 
+            @include m.grid(3,5rem);
+        }
+
+        text-decoration: none;
+        li{
+            img{
+                margin: 0 auto;
+                width: 12rem;
+            }
+
+            p{
+                font-family: v.$cursivas;
+                font-size: 3.2rem;
+                color: v.$primario;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use '../bses/variables' as v;
+@use '../bses/mixins' as m;
+.contenido-principal{
+    background-color: v.$blanco;
+    padding: 5rem 2rem;
+    border-radius: 4rem;
+
+    @include m.tablet { 
+        padding: 10rem;
+        margin-top: -10rem;
+        position: relative;
+    }
+}
